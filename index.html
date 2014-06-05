@@ -8,13 +8,19 @@
     <link rel="stylesheet" type="text/css" href="font/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="style/jquery.mobile.structure-1.4.2.css">
     <link rel="stylesheet" type="text/css" href="style/reset.css">
-    <link rel="stylesheet" type="text/css" href="style/slidebars.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="style/slidebars.min.css">-->
     <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/jquery.mmenu.all.css">
+
     <link rel="stylesheet" type="text/css" href="style/media.css">
 
     <script src="js/jquery.js"></script>
     <script src="js/jquery.mobile-1.4.2.min.js"></script>
-    <script src="js/slidebars.min.js"></script>
+    <!--<script src="js/slidebars.min.js"></script>-->
+    <script src="js/jquery.mmenu.min.all.js"></script>
+
+
+
     <script src="js/script.js"></script>
     <!--<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'> -->
     <!--<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.2/jquery.mobile.min.css" />
@@ -22,6 +28,15 @@
 	<link rel="stylesheet" type="text/css" href="style/media.css">
     <link rel="stylesheet" type="text/css" href="style/style.css">
 <script src="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.2/jquery.mobile.min.js"></script> -->
+
+
+    <style type="text/css">
+        #mm-blocker {
+            background: rgba(0, 0, 0, 0.5);
+        }
+    </style>
+
+
 
     <script type="text/javascript">
         $(document).ready(function(e) {
@@ -126,6 +141,18 @@
 
 
 
+            $("#menu").mmenu({
+                // options:
+                position: "right",
+                zposition: "next"
+            });
+
+            $("#leftPanelSuper").mmenu({
+                // options:
+                position: "left",
+                zposition: "next"
+            });
+
 
 
 
@@ -146,378 +173,19 @@
 <body>
     <div data-role="page" id="sb-site">
 
-        <div class="sb-slidebar sb-left">
 
 
-            <div class="ui-panel-inner">
 
-                <div class="innerBox-photo-new">
 
-                    <section class="panel-header">
-                        <p>AgarwalMatrimony</p>
-                        <a href="#" class="ui-btn-right refresh-panel">#</a>
-                    </section>
 
-                    <section class="Panel-photo clearfix">
 
-                        <div class="panel-photoBox">
-                            <a href="#">
-                                <img src="images/girl1.jpg">
-                            </a>
-                        </div>
-                        <!-- -->
 
-                        <div class="panel-user-name">
-                            <a href="#" class="name">Chandresh</a>
-                            <a href="#" class="id">AGR100101</a>
-                            <a href="#" class="addphoto">Add Photo</a>
-                        </div>
-                    </section>
 
-                    <section class="paidinfo">
-                        Become a Paid Member
-                    </section>
+        <!-- <div data-role="panel" id="rpanel" data-position="right" data-display="push" data-theme="cbsapp-right">-->
 
 
-                    <div class="clearall"></div>
-                </div>
-                <!--innerBox-photo-new -->
 
-
-
-
-
-                <div class="menu relative">
-
-                    <nav class="leftnavigation">
-
-                        <ul class="nav-root">
-                            <li class="mp"><a href="#">Matching Profiles</a>
-                            </li>
-                            <li class="inb inChild"><a href="#" class="sb-disable-close">Inbox  
-            <span class="count">20</span></a>
-                                <ul class="parentul none">
-                                    <li><a href="#">Test Link</a>
-                                    </li>
-                                    <li><a href="#">Test Link</a>
-                                    </li>
-                                    <li><a href="#">Test Link  <span class="count">20</span></a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="inChild"><a href="#" class="sb-disable-close">Outbox</a>
-
-                                <ul class="parentul none">
-                                    <li><a href="#">Test Link</a>
-                                    </li>
-                                    <li><a href="#">Test Link</a>
-                                    </li>
-                                    <li><a href="#">Test Link</a>
-                                    </li>
-                                </ul>
-
-
-                            </li>
-                            <li><a href="#">Sentbox</a>
-                            </li>
-                            <li><a href="#">Matrimony Messenger</a>
-                            </li>
-                            <li><a href="#">Daily 7</a>
-                            </li>
-
-                            <li><a href="#">Share</a>
-                            </li>
-                            <li><a href="#">contact us</a>
-                            </li>
-                            <li><a href="#">Quick Tour</a>
-                            </li>
-                            <li><a href="#">Account Setting</a>
-                            </li>
-                        </ul>
-                        <!--nav-root -->
-
-
-
-                    </nav>
-                    <!--leftnavigation -->
-
-
-
-
-
-
-
-
-
-
-                    <section class="AddContainer">
-
-                        <a href="#" class="scrollto">#</a>
-
-
-                        <div class="top-Box1">
-
-                            <a href="#">Upgrade to Paid Membership</a>
-
-                        </div>
-
-
-                        <div class="top-Box2">
-
-                            <p><span class="oneem">Double Bonanza Offer</span>
-                                Upto Rs.<span class="oneem">1250</span>/- Off + <span class="oneem">FREE</span> Profile Highlighter.
-                            </p>
-
-                        </div>
-
-
-
-
-                    </section>
-
-
-
-
-                </div>
-                <!--menu -->
-
-            </div>
-            <!--ui-panel-inner -->
-
-
-
-        </div>
-
-
-
-        <div class="sb-slidebar sb-right">
-
-            <!--<div data-role="panel" id="rpanel" data-position="right" data-display="push" data-theme="cbsapp-right">-->
-
-
-
-            <div class="ui-panel-inner">
-
-                <section class="panel-header">
-                    <p>Refine Search</p>
-                </section>
-
-                <div id="wapper-container">
-
-                    <section class="Rpanel-header clearfix">
-                        <a href="#" class="r-refresh">#</a> 
-                        <a href="#" class="r-search">#</a> 
-                    </section>
-
-                    <!--<div class="overlay">-->
-
-                    <section class="RangeSlider relative clearfix">
-                        <div class="ui-field-contain">
-                            <div data-role="rangeslider">
-                                <label for="range-7a">Age:</label>
-                                <input name="range-7a" id="range-7a" min="0" max="100" value="0" type="range" />
-                                <label for="range-7b">to</label>
-                                <input name="range-7b" id="range-7b" min="0" max="100" value="100" type="range" />
-                            </div>
-                        </div>
-                    </section>
-
-
-                    <section class="RangeSlider relative clearfix">
-                        <div class="ui-field-contain">
-                            <div data-role="rangeslider">
-                                <label for="range-7a">Height:</label>
-                                <input name="range-7a" id="range-7a" min="0" max="100" value="0" type="range" />
-                                <label for="range-7b">to</label>
-                                <input name="range-7b" id="range-7b" min="0" max="100" value="100" type="range" />
-                            </div>
-                        </div>
-                    </section>
-
-
-
-                    <div data-role="collapsible-set" class="rpanel-inner" data-inset="false">
-
-
-
-
-
-
-
-                        <div data-role="collapsible" data-collapsed="true" data-iconpos="right" data-theme="c">
-                            <h3><a href="#">Marital Status:<span class="subtxt">Unmarried</span></a></h3> 
-
-                            <form>
-                                <fieldset data-role="controlgroup" data-theme="formms" data-mini="true">
-                                    <input type="checkbox" name="checkbox-v-2a" id="checkbox-v-2a" data-theme="ch-box">
-                                    <label for="checkbox-v-2a">One</label>
-                                    <input type="checkbox" name="checkbox-v-2b" id="checkbox-v-2b" data-theme="ch-box">
-                                    <label for="checkbox-v-2b">Two</label>
-                                    <input type="checkbox" name="checkbox-v-2c" id="checkbox-v-2c" data-theme="ch-box">
-                                    <label for="checkbox-v-2c">Three</label>
-                                </fieldset>
-                            </form>
-                        </div>
-
-                        <div data-role="collapsible" data-collapsed="true" data-iconpos="right" data-theme="c">
-                            <h3><a href="#search2">Religion:<span class="subtxt">Any</span></a></h3>
-                            <p>Content</p>
-                        </div>
-
-                        <div data-role="collapsible" data-collapsed="true" data-iconpos="right" data-theme="c">
-                            <h3><a href="#search3">Subcaste:<span class="subtxt">Bisa</span></a></h3>
-                            <p>Content</p>
-                        </div>
-
-                        <div data-role="collapsible" data-collapsed="true" data-iconpos="right" data-theme="c" class="c-destory">
-                            <h3><a class="sh" href="#search1">Mother Tongue:<span class="subtxt">Hindi</span></a></h3>
-                            <p>Content</p>
-                        </div>
-
-
-
-                        <div data-role="collapsible" data-collapsed="true" data-iconpos="right" data-theme="c" class="c-destory">
-                            <h3><a class="sh" href="#search-age">Age:<span class="subtxt">22yrsto26yrs</span></a></h3>
-                            <p>Content</p>
-                        </div>
-
-
-
-
-
-                        <div data-role="collapsible" data-collapsed="true" data-iconpos="right" data-theme="c">
-                            <h3><a href="#search">Country living in:<span class="subtxt">India</span></a></h3>
-                            <p>Content</p>
-                        </div>
-
-                        <div data-role="collapsible" data-collapsed="true" data-iconpos="right" data-theme="c">
-                            <h3><a href="#search3">Education:<span class="subtxt">Any</span></a></h3>
-                            <p>Content</p>
-                        </div>
-
-
-                    </div>
-
-
-
-                    <!-- </div>-->
-                    <!--Overlay -->
-
-                    <section class="AddContainer clearfix rpanel-bottombox">
-
-                        <a href="#" class="scrollto ui-link">#</a>
-
-
-                        <div class="savesearch clearfix">
-                            <a href="#" class="savesearch-link">savesearch</a>
-
-                            <a href="#" class="mysavedsearch">mysavedsearch</a>
-
-                        </div>
-
-
-
-                    </section>
-
-                </div>
-                <!--wapper-container -->
-
-
-
-
-                <div class="box none relative" id="search1">
-
-                    <form class="ui-filterable">
-                        <input id="filterBasic-input" data-type="search" placeholder="Mother Tongue">
-                    </form>
-                    <ul data-role="listview" data-filter="true" data-input="#filterBasic-input" data-theme="language">
-                        <li>Acura</li>
-                        <li>Audi</li>
-                        <li>BMW</li>
-                        <li>Cadillac</li>
-                        <li>Ferrari</li>
-                    </ul>
-
-
-
-                    <a href="#" id="close" class="fliter-close">close</a> 
-                </div>
-                <!--search -->
-
-
-
-
-
-                <div class="box none relative" id="search-age">
-
-
-                    <div class="agebox-action clearfix">
-
-                        <span>Age</span>  <a href="#" class="can">close</a>  <a href="#" class="ok">ok</a>
-
-                    </div>
-
-
-                    <div class="ageFrom refinebox clearfix">
-
-                        <span>From</span>
-
-                        <div class="datainput">
-                            <input name="browser" data-role="none" class="age" readonly>
-                            <ul class="none listage" data-set="child">
-                                <li>1</li>
-                                <li>2</li>
-                                <li>3</li>
-                                <li>4</li>
-                                <li>5</li>
-                                <li>6</li>
-                                <li>7</li>
-                                <li>8</li>
-                            </ul>
-                        </div>
-
-                    </div>
-
-
-                    <div class="ageTo refinebox clearfix">
-                        <span>To</span>
-                        <div class="datainput">
-                            <input name="browser" data-role="none" class="age1" readonly>
-                            <ul class="none listage1">
-                                <li>1</li>
-                                <li>2</li>
-                                <li>3</li>
-                                <li>4</li>
-                                <li>5</li>
-                                <li>6</li>
-                                <li>7</li>
-                                <li>8</li>
-                            </ul>
-                        </div>
-
-
-
-
-                    </div>
-
-
-
-
-
-
-                    <a href="#" id="close" class="fliter-close">close</a> 
-                </div>
-
-
-
-
-
-
-
-
-            </div>
-
-        </div>
+        <!--</div>-->
         <!-- /panel -->
 
 
@@ -534,7 +202,7 @@
 
         <div data-role="header" class="Header" data-theme="cbsapp">
 
-            <a href="#" class="sb-toggle-left panel-left ui-btn-left">Leftpanel</a>
+            <a href="#leftPanelSuper" class="sb-toggle-left panel-left ui-btn-left">Leftpanel</a>
 
 
             <div class="ui-btn-inline spinContainer">
@@ -560,7 +228,7 @@
             <a href="#" class="GridView_enable ui-btn-right">View</a>
 
             <!--<a href="#rpanel" class="sb-toggle-right panel-right ui-btn-right">search</a> -->
-            <a href="#" class="sb-toggle-right panel-right ui-btn-right">search</a>
+            <a href="#menu" class="sb-toggle-right panel-right ui-btn-right">search</a>
 
 
         </div>
@@ -1037,10 +705,397 @@
         <script>
             (function($) {
                 $(document).ready(function() {
-                    $.slidebars({});
+                    // $.slidebars({});
                 });
             })(jQuery);
         </script>
+
+
+
+        <nav id="menu">
+
+            <div class="ui-panel-inner">
+
+                <section class="panel-header">
+                    <p>Refine Search</p>
+                </section>
+
+                <div id="wapper-container">
+
+                    <section class="Rpanel-header clearfix">
+                        <a href="#" class="r-refresh">#</a> 
+                        <a href="#" class="r-search">#</a> 
+                    </section>
+
+                    <!--<div class="overlay">-->
+
+                    <section class="RangeSlider relative clearfix">
+                        <div class="ui-field-contain">
+                            <div data-role="rangeslider">
+                                <label for="range-7a">Age:</label>
+                                <input name="range-7a" id="range-7a" min="0" max="100" value="0" type="range" />
+                                <label for="range-7b">to</label>
+                                <input name="range-7b" id="range-7b" min="0" max="100" value="100" type="range" />
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="RangeSlider relative clearfix">
+                        <div class="ui-field-contain">
+                            <div data-role="rangeslider">
+                                <label for="range-7a">Height:</label>
+                                <input name="range-7a" id="range-7a" min="0" max="100" value="0" type="range" />
+                                <label for="range-7b">to</label>
+                                <input name="range-7b" id="range-7b" min="0" max="100" value="100" type="range" />
+                            </div>
+                        </div>
+                    </section>
+
+
+
+                    <div data-role="collapsible-set" class="rpanel-inner" data-inset="false">
+
+
+
+
+
+
+
+                        <div data-role="collapsible" data-collapsed="true" data-iconpos="right" data-theme="c">
+                            <h3><a href="#">Marital Status:<span class="subtxt">Unmarried</span></a></h3> 
+
+                            <form>
+                                <fieldset data-role="controlgroup" data-theme="formms" data-mini="true">
+                                    <input type="checkbox" name="checkbox-v-2a" id="checkbox-v-2a" data-theme="ch-box">
+                                    <label for="checkbox-v-2a">One</label>
+                                    <input type="checkbox" name="checkbox-v-2b" id="checkbox-v-2b" data-theme="ch-box">
+                                    <label for="checkbox-v-2b">Two</label>
+                                    <input type="checkbox" name="checkbox-v-2c" id="checkbox-v-2c" data-theme="ch-box">
+                                    <label for="checkbox-v-2c">Three</label>
+                                </fieldset>
+                            </form>
+                        </div>
+
+                        <div data-role="collapsible" data-collapsed="true" data-iconpos="right" data-theme="c">
+                            <h3><a href="#search2">Religion:<span class="subtxt">Any</span></a></h3>
+                            <p>Content</p>
+                        </div>
+
+                        <div data-role="collapsible" data-collapsed="true" data-iconpos="right" data-theme="c">
+                            <h3><a href="#search3">Subcaste:<span class="subtxt">Bisa</span></a></h3>
+                            <p>Content</p>
+                        </div>
+
+                        <div data-role="collapsible" data-collapsed="true" data-iconpos="right" data-theme="c" class="c-destory">
+                            <h3><a class="sh" href="#search1">Mother Tongue:<span class="subtxt">Hindi</span></a></h3>
+                            <p>Content</p>
+                        </div>
+
+
+
+                        <div data-role="collapsible" data-collapsed="true" data-iconpos="right" data-theme="c" class="c-destory">
+                            <h3><a class="sh" href="#search-age">Age:<span class="subtxt">22yrsto26yrs</span></a></h3>
+                            <p>Content</p>
+                        </div>
+
+
+
+
+
+                        <div data-role="collapsible" data-collapsed="true" data-iconpos="right" data-theme="c">
+                            <h3><a href="#search">Country living in:<span class="subtxt">India</span></a></h3>
+                            <p>Content</p>
+                        </div>
+
+                        <div data-role="collapsible" data-collapsed="true" data-iconpos="right" data-theme="c">
+                            <h3><a href="#search3">Education:<span class="subtxt">Any</span></a></h3>
+                            <p>Content</p>
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- </div>-->
+                    <!--Overlay -->
+
+                    <section class="AddContainer clearfix rpanel-bottombox">
+
+                        <a href="#" class="scrollto ui-link">#</a>
+
+
+                        <div class="savesearch clearfix">
+                            <a href="#" class="savesearch-link">savesearch</a>
+
+                            <a href="#" class="mysavedsearch">mysavedsearch</a>
+
+                        </div>
+
+
+
+                    </section>
+
+                </div>
+                <!--wapper-container -->
+
+
+
+
+                <div class="box none relative" id="search1">
+
+                    <form class="ui-filterable">
+                        <input id="filterBasic-input" data-type="search" placeholder="Mother Tongue">
+                    </form>
+                    <ul data-role="listview" data-filter="true" data-input="#filterBasic-input" data-theme="language">
+                        <li>Acura</li>
+                        <li>Audi</li>
+                        <li>BMW</li>
+                        <li>Cadillac</li>
+                        <li>Ferrari</li>
+                    </ul>
+
+
+
+                    <a href="#" id="close" class="fliter-close">close</a> 
+                </div>
+                <!--search -->
+
+
+
+
+
+                <div class="box none relative" id="search-age">
+
+
+                    <div class="agebox-action clearfix">
+
+                        <span>Age</span>  <a href="#" class="can">close</a>  <a href="#" class="ok">ok</a>
+
+                    </div>
+
+
+                    <div class="ageFrom refinebox clearfix">
+
+                        <span>From</span>
+
+                        <div class="datainput">
+                            <input name="browser" data-role="none" class="age" readonly>
+                            <ul class="none listage" data-set="child">
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                                <li>8</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                    <div class="ageTo refinebox clearfix">
+                        <span>To</span>
+                        <div class="datainput">
+                            <input name="browser" data-role="none" class="age1" readonly>
+                            <ul class="none listage1">
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                                <li>8</li>
+                            </ul>
+                        </div>
+
+
+
+
+                    </div>
+
+
+
+
+
+
+                    <a href="#" id="close" class="fliter-close">close</a> 
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+
+        </nav>
+
+
+
+
+
+
+
+
+
+
+        <div class="sb-slidebar sb-left" id="leftPanelSuper">
+
+
+            <div class="ui-panel-inner">
+
+                <div class="innerBox-photo-new">
+
+                    <section class="panel-header">
+                        <p>AgarwalMatrimony</p>
+                        <a href="#" class="ui-btn-right refresh-panel">#</a>
+                    </section>
+
+                    <section class="Panel-photo clearfix">
+
+                        <div class="panel-photoBox">
+                            <a href="#">
+                                <img src="images/girl1.jpg">
+                            </a>
+                        </div>
+                        <!-- -->
+
+                        <div class="panel-user-name">
+                            <a href="#" class="name">Chandresh</a>
+                            <a href="#" class="id">AGR100101</a>
+                            <a href="#" class="addphoto">Add Photo</a>
+                        </div>
+                    </section>
+
+                    <section class="paidinfo">
+                        Become a Paid Member
+                    </section>
+
+
+                    <div class="clearall"></div>
+                </div>
+                <!--innerBox-photo-new -->
+
+
+
+
+
+                <div class="menu relative">
+
+                    <nav class="leftnavigation">
+
+                        <ul class="nav-root">
+                            <li class="mp"><a href="#">Matching Profiles</a>
+                            </li>
+                            <li class="inb inChild"><a href="#" class="sb-disable-close">Inbox  
+                                <span class="count">20</span></a>
+                                <ul class="parentul none">
+                                    <li><a href="#">Test Link</a>
+                                    </li>
+                                    <li><a href="#">Test Link</a>
+                                    </li>
+                                    <li><a href="#">Test Link  <span class="count">20</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="inChild"><a href="#" class="sb-disable-close">Outbox</a>
+
+                                <ul class="parentul none">
+                                    <li><a href="#">Test Link</a>
+                                    </li>
+                                    <li><a href="#">Test Link</a>
+                                    </li>
+                                    <li><a href="#">Test Link</a>
+                                    </li>
+                                </ul>
+
+
+                            </li>
+                            <li><a href="#">Sentbox</a>
+                            </li>
+                            <li><a href="#">Matrimony Messenger</a>
+                            </li>
+                            <li><a href="#">Daily 7</a>
+                            </li>
+
+                            <li><a href="#">Share</a>
+                            </li>
+                            <li><a href="#">contact us</a>
+                            </li>
+                            <li><a href="#">Quick Tour</a>
+                            </li>
+                            <li><a href="#">Account Setting</a>
+                            </li>
+                        </ul>
+                        <!--nav-root -->
+
+
+
+                    </nav>
+                    <!--leftnavigation -->
+
+
+
+
+
+
+
+
+
+
+                    <section class="AddContainer">
+
+                        <a href="#" class="scrollto">#</a>
+
+
+                        <div class="top-Box1">
+
+                            <a href="#">Upgrade to Paid Membership</a>
+
+                        </div>
+
+
+                        <div class="top-Box2">
+
+                            <p><span class="oneem">Double Bonanza Offer</span>
+                                Upto Rs.<span class="oneem">1250</span>/- Off + <span class="oneem">FREE</span> Profile Highlighter.
+                            </p>
+
+                        </div>
+
+
+
+
+                    </section>
+
+
+
+
+                </div>
+                <!--menu -->
+
+            </div>
+            <!--ui-panel-inner -->
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
 
     </div>
 </body>
