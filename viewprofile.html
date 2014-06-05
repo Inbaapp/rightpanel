@@ -1,0 +1,638 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>CBS Mobile APP</title>
+    <link rel="stylesheet" type="text/css" href="font/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="style/jquery.mobile.structure-1.4.2.css">
+    <link rel="stylesheet" type="text/css" href="style/reset.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/viewprofile.css">
+    <link rel="stylesheet" type="text/css" href="style/media.css">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mobile-1.4.2.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script type="text/javascript">
+        function ScaleContentToDevice() {
+            scroll(0, 0);
+            var content = $.mobile.getScreenHeight() - $(".ui-header").outerHeight() - $(".ui-footer").outerHeight() - $(".ui-content").outerHeight() + $(".ui-content").height();
+            $(".ui-content").height(content);
+        }
+
+        $(document).on("pagecontainershow", function() {
+            ScaleContentToDevice();
+        });
+
+        $(window).on("resize orientationchange", function() {
+            ScaleContentToDevice();
+        });
+    </script>
+
+    <!--<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'> -->
+    <!--<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.2/jquery.mobile.min.css" />
+	<link rel="stylesheet" type="text/css" href="style/reset.css">
+	<link rel="stylesheet" type="text/css" href="style/media.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.2/jquery.mobile.min.js"></script> -->
+
+    <script>
+        $(function() {
+            gotoTop = function(x) {
+                var body = $(".ui-content");
+                body.animate({
+                    scrollTop: x
+                }, '500', 'swing', function() {});
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <div data-role="page" id="viewprofile" class="relative">
+
+        <a href="#" onclick="gotoTop(200);" class="move-top"></a>
+
+
+        <div data-role="header" class="Header" data-theme="cbsapp">
+            <a href="#lpanel" class="panel-left ui-btn-left">Leftpanel</a>
+            <h1>View Profile</h1>
+        </div>
+
+
+        <div class="ui-content vp-cbsapp" role="main">
+
+            <div class="banner">
+                <div class="strip">
+
+                    <div class="strip-inner clearfix">
+
+                        <div class="small-image">
+                            <img src="images/girl.jpg" alt="a">
+                            <span class="right-arrow-top"></span>
+                        </div>
+
+
+                        <ul class="clearfix">
+                            <li class="phoneicon"><a href="#">#</a>
+                            </li>
+                            <li class="astro"><a href="#">#</a>
+                            </li>
+                            <li class="short-icon"><a href="#">#</a>
+                            </li>
+                            <li class="pin-icon"><a href="#">#</a>
+                            </li>
+                            <li class="heart-icon"><a href="#">#</a>
+                            </li>
+                            <!--<li class="btn-send"><a href="#">Send Interest</a></li> -->
+
+                        </ul>
+                    </div>
+                    <!--strip-inner -->
+                </div>
+                <!-- strip-->
+            </div>
+            <!--banner -->
+
+
+
+
+            <div class="view-pr-bg relative">
+
+                <a href="#" class="vpnext">#</a>
+                <a href="#" class="vpprev">#</a>
+
+                <span class="view-pro-tag goldtag"></span>
+
+                <div class="vp-imagebox clearfix">
+                    <div class="image-box-inner">
+                        <a href="#">
+                            <img src="images/girl2.jpg" alt="girl">
+                        </a>
+
+                        <a href="#" class="liked">#</a>
+                    </div>
+                </div>
+
+                <div class="detail-vp-profile">
+                    <p class="name">Reena Agarwal</p>
+                    <p class="id">AGR1231223</p>
+
+                    <div class="clock">
+                        <p>Activity</p>
+                        <span class="time">23 hrs ago</span>
+                    </div>
+                    <!--clock -->
+
+                </div>
+                <!--detail-vp-profile -->
+
+            </div>
+            <!-- view-pr-bg-->
+
+
+            <div class="strip">
+
+                <div class="strip-inner">
+
+                    <ul class="clearfix">
+                        <li class="phoneicon"><a href="#">#</a>
+                        </li>
+                        <li class="astro"><a href="#">#</a>
+                        </li>
+                        <li class="short-icon"><a href="#">#</a>
+                        </li>
+                        <li class="pin-icon"><a href="#">#</a>
+                        </li>
+                        <!--<li class="btn-send"><a href="#">Send Interest</a></li> -->
+                        <li class="sendmail"><a href="#">Send Mail</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--strip-inner -->
+            </div>
+            <!-- strip-->
+
+            <div class="user-data">
+                <p>Here you can not edit profile, If you want to Edit go to desktop site</p>
+            </div>
+
+            <div class="Personal-data">
+                <h1>Personal Information</h1>
+
+                <div class="Personal-data-inner personal">
+                    <h2>Few words about my daughter</h2>
+
+                    <p>My daughter is a calm and understanding girl. She respects traditional values and also has modern outlook. She loves reading books and hearing music.</p>
+                </div>
+                <!--personal -->
+
+
+                <div class="Personal-data-inner Basic">
+                    <h2>Basic Details</h2>
+
+                    <ol class="vplist">
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Profile created for</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Daughter</span>
+                        </li>
+
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Name</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Mansi Agrawal</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Gender</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Female</span>
+                        </li>
+
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Age</span><span class="vp-colon">:</span>
+                            <span class="vp-value">25 Yrs</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Height</span><span class="vp-colon">:</span>
+                            <span class="vp-value">4 ft / 121 cm</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Weight</span><span class="vp-colon">:</span>
+                            <span class="vp-value">45 Kgs</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Marital Status</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Unmarried</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Mother Tongue</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Hindi</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Body Type</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Complexion Average / Fair</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Physical Status</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Normal</span>
+                        </li>
+
+                    </ol>
+
+                </div>
+                <!--Basic -->
+
+
+
+                <div class="Personal-data-inner Reli">
+                    <h2>Religious Information</h2>
+
+                    <ol class="vplist">
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Religion</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Hindu</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Subcaste</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Bisa (subcaste No Bar)</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Gothram</span><span class="vp-colon">:</span>
+                            <span class="vp-value">garg</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Dosham</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Don't Know</span>
+                        </li>
+
+
+                    </ol>
+                </div>
+                <!-- Reli-->
+
+
+                <div class="Personal-data-inner proff">
+                    <h2>Professional Information</h2>
+
+                    <ol class="vplist">
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Education Detail</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Convent Educated, B.com, Llb, Pursuing Llm</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Occupation</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Not Working</span>
+                        </li>
+
+                    </ol>
+                </div>
+                <!--proff -->
+
+
+                <div class="Personal-data-inner location">
+                    <h2>Location</h2> 
+                    <ol class="vplist">
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">City</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Jabalpur</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">State</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Madhya Pradesh</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Country</span><span class="vp-colon">:</span>
+                            <span class="vp-value">India</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Citizenship</span><span class="vp-colon">:</span>
+                            <span class="vp-value">India</span>
+                        </li>
+
+                    </ol>
+                </div>
+                <!--location -->
+
+
+                <div class="Personal-data-inner famil">
+                    <h2>Location</h2> 
+                    <ol class="vplist">
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Family Value</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Liberal</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Father's Occupation</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Businessman/industrialist</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Family Type</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Joint family</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Mother's Occupation</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Housewife</span>
+                        </li>
+
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">No.of Brothers 2</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Family Status Rich / Affluent</span>
+                        </li>
+
+                    </ol>
+                </div>
+                <!--family -->
+
+
+
+                <div class="Personal-data-inner Abfamily">
+                    <h2>About my family</h2> 
+
+                    <p>Upper Middle Class Family. With God’s Grace we are gifted with all kinds of pleasures and comforts of life and believe in living and leading a tension free life. We are the first panchang cum calendar publishers of India. Our Family is very open-mi.</p>
+
+
+                </div>
+                <!--Abfamily -->
+
+
+
+                <div class="Personal-data-inner lifestyle">
+                    <h2>About my family</h2>
+
+                    <ol class="vplist">
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Eating Habits</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Eggetarian</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Drinking Habits</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Non-drinker</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Smoking Habits</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Non-smoker</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Hobbies</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Pets, Television, Relaxing, Chating With Friends</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Interests</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Movies, Social Service, Television</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Music</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Film songs</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Sports</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Badminton, Swimming / Water sports, Volleyball</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Food</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Chinese, Continental, South Indian</span>
+                        </li>
+
+                    </ol>
+                </div>
+                <!-- lifestyle-->
+
+
+            </div>
+            <!--PersonalData -->
+
+
+
+            <div class="Personal-data">
+                <h1>Partner Preference</h1>
+
+                <div class="Personal-data-inner personal">
+                    <h2>A few lines about my partner</h2>
+
+                    <p>She is looking for a match who is understanding in nature, self-dependent, witty, humorous, life enjoying attitude. The boy as well as the family should have progressive thoughts, i.e. modern and liberal. We are looking for broad-minded, smart, practical and Scientific Outlook boy. One who knows how to balance family life with work. Family should not be conservative. We are looking forward for reputed families with strong background, i.e. those who have already acquired Basics of today’s life and are not under any loan liability and the boy is an income tax payee.</p>
+
+                </div>
+                <!--personal -->
+
+
+                <div class="Personal-data-inner Basic">
+                    <h2>Basic Details</h2>
+
+                    <ol class="vplist">
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Profile created for</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Daughter</span>
+                        </li>
+
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Name</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Mansi Agrawal</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Gender</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Female</span>
+                        </li>
+
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Age</span><span class="vp-colon">:</span>
+                            <span class="vp-value">25 Yrs</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Height</span><span class="vp-colon">:</span>
+                            <span class="vp-value">4 ft / 121 cm</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Weight</span><span class="vp-colon">:</span>
+                            <span class="vp-value">45 Kgs</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Marital Status</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Unmarried</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Mother Tongue</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Hindi</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Body Type</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Complexion Average / Fair</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Physical Status</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Normal</span>
+                        </li>
+
+                    </ol>
+
+                </div>
+                <!--Basic -->
+
+
+
+
+                <div class="Personal-data-inner Reli">
+                    <h2>Religious Preference</h2>
+
+                    <ol class="vplist">
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Religion</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Hindu</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Subcaste</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Bisa (subcaste No Bar)</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Gothram</span><span class="vp-colon">:</span>
+                            <span class="vp-value">garg</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Dosham</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Don't Know</span>
+                        </li>
+
+
+                    </ol>
+                </div>
+
+
+                <div class="Personal-data-inner proff">
+                    <h2>Professional Preference</h2>
+
+                    <ol class="vplist">
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Education Detail</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Convent Educated, B.com, Llb, Pursuing Llm</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Occupation</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Not Working</span>
+                        </li>
+
+                    </ol>
+                </div>
+
+
+
+                <div class="Personal-data-inner famil">
+                    <h2>Location Preference</h2> 
+                    <ol class="vplist">
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Family Value</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Liberal</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Father's Occupation</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Businessman/industrialist</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Family Type</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Joint family</span>
+                        </li>
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">Mother's Occupation</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Housewife</span>
+                        </li>
+
+
+                        <li class="vplist-list clearfix">
+                            <span class="vp-data">No.of Brothers 2</span><span class="vp-colon">:</span>
+                            <span class="vp-value">Family Status Rich / Affluent</span>
+                        </li>
+
+                    </ol>
+                </div>
+
+
+
+
+
+            </div>
+            <!--Personal-data -->
+
+
+
+            <div class="end-of-page">
+
+            </div>
+            <!-- end-of-page-->
+            <div class="end-of-page2">
+
+            </div>
+            <!-- end-of-page-->
+            <div class="end-of-page1">
+
+            </div>
+            <!-- end-of-page-->
+
+
+
+
+
+
+
+
+            <div class="Upgradetxt">
+                <a href="#">Upgrade to Paid Membership</a>
+
+                <div class="doubleBonza">
+
+                    <p>Double Bonanza Offer</p>
+                    <p>Upto Rs.1250/- Off + FREE Profile Highlighter.</p>
+                    <span class="tp-arrow"></span>
+
+                </div>
+
+
+            </div>
+
+
+
+
+            <div class="footerbar-vp" data-role="footer">
+
+
+
+            </div>
+
+
+        </div>
+</body>
+
+</html>
